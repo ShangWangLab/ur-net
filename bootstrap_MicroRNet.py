@@ -7,7 +7,7 @@ import os
 import torch
 
 
-os.makedirs("checkpoints", exists_ok=True)
+os.makedirs("checkpoints", exist_ok=True)
 # The path for the model to bootstrap from. This should be a basic MicroNet.
 model_in  = "trained_models/u-net_1600.pt"
 model_out = "checkpoints/ur-net_bootstrap.pt"

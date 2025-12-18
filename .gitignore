@@ -1,3 +1,8 @@
+# Project-specific directories
+checkpoints
+logs
+#size_map_cache
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
