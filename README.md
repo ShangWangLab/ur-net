@@ -46,6 +46,6 @@ Please reach out to Andre Faubert (afaubert@stevens.edu) with any questions or c
 
 # Acknowledgements
 
-Funded by the National Institutes of Health (R35GM142953).
+Funded by the National Institutes of Health (R35GM142953) and the American Heart Association (25IPA1453176).
 
 A special thanks to our colleagues at Dr. Shang Wang's Lab!
