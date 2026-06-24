@@ -1,7 +1,7 @@
 """Model definitions and data loading utility functions.
 
-MicroNet is the final implementation of µ-Net.
-MicroRNet is the final implementation of the refinement µ-Net (µr-Net).
+PicoNet is the final implementation of Pico-Net.
+PicoRNet is the final implementation of the refinement Pico-Net (PicoR-Net).
 """
 
 import os
@@ -19,11 +19,11 @@ def lecun_init(tensor):
         tensor.normal_(0, std)
 
 
-class MicroRNet(nn.Module):
+class PicoRNet(nn.Module):
     def __init__(self):
         super().__init__()
 
-        self.name = "ur-net"
+        self.name = "picor-net"
         self.down0 = nn.Sequential(
             nn.Conv3d(1, 4, 3, padding=1, padding_mode="reflect"),
             nn.Conv3d(4, 4, 3, padding=1, padding_mode="reflect"),
@@ -80,11 +80,11 @@ class MicroRNet(nn.Module):
         return x4
 
 
-class MicroNet(nn.Module):
+class PicoNet(nn.Module):
     def __init__(self):
         super().__init__()
 
-        self.name = "u-net"
+        self.name = "pico-net"
         self.down0 = nn.Sequential(
             nn.Conv3d(1, 4, 3, padding=1, padding_mode="reflect"),
             nn.Conv3d(4, 4, 3, padding=1, padding_mode="reflect"),

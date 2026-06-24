@@ -1,5 +1,5 @@
-"""Set model_in and model_out, then run this to add a zero layer to µ-Net to
-create a µr-Net ready to train.
+"""Set model_in and model_out, then run this to add a zero layer to Pico-Net to
+create a PicoR-Net ready to train.
 """
 
 import os
@@ -8,9 +8,9 @@ import torch
 
 
 os.makedirs("checkpoints", exist_ok=True)
-# The path for the model to bootstrap from. This should be a basic MicroNet.
-model_in  = "trained_models/u-net_1600.pt"
-model_out = "checkpoints/ur-net_bootstrap.pt"
+# The path for the model to bootstrap from. This should be a basic Pico-Net.
+model_in  = "trained_models/pico-net_1600.pt"
+model_out = "checkpoints/picor-net_bootstrap.pt"
 
 # A new zero layer that outputs four features.
 out4 = torch.zeros((4, 1, 3, 3, 3), dtype=torch.float32)
